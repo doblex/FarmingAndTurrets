@@ -18,13 +18,13 @@ void AGameplayTagsActor::BeginPlay()
 	
 }
 
-// Called every frame
+// Called every frameTagContainer
 void AGameplayTagsActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
 
-void AGameplayTagsActor::GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const
+void AGameplayTagsActor::GetOwnedGameplayTags(FGameplayTagContainer& ) const
 {
 	TagContainer.AddTag(GameplayTag);
 }
